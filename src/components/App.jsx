@@ -1,6 +1,6 @@
 import React from "react"
 import Section from './Section/Section'
-import Statistics from './Statisticks/Statistics'
+import Statistics from './Statistics/Statistics'
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions'
 import Notification from './Notification/Notification'
 
@@ -51,7 +51,7 @@ export class App extends React.Component {
 
       </Section>
 
-      <Section>
+      <Section title="Statistics">
         {this.countTotalFeedback() < 1 ? (
           <Notification message = "There is no feedback" />
         ) : (
